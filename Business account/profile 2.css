@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Montserrat Alternates, sans-serif;
+  margin: -10px;
+  padding: -10px;
+  background-color: #283848;
+}
+
+header {
+  background-color: #f3d0bd;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-weight: 1000px;
+  font-size: 100px;
+  color: white;
+  margin-right: 20px;
+}
+
+main{ 
+  margin-left: 10 px;
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  background-color: #f3d0bd;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#navbar li {
+  float: left;
+
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+#navbar a:hover {
+  background-color: #727272;
+}
+
+#navbar li{
+  float: left;
+}
+
+#contents {
+  margin-left: 00px;
+  padding: 20px;
+}
+
+.main-content {
+  padding: 48px;
+  width: 76%;
+}
+
+.top-selling-products {
+  text-align: left;
+  font-size: 1.8rem;
+  padding: 7px 0;
+}
+
+.top-selling-products th,h2 {
+  background: #f0b3b2;
+}
+
+.top-selling-products th,
+.top-selling-products td {
+  padding: 10px 8px;
+}
+
+#profile-img{
+  height: 200px;
+  clip-path: circle();
+}
+
+.edit-button{
+  font-size: 15px;
+  font-family: Montserrat Alternates, sans-serif;
+  background-color: #a29baa;
+  border-radius: 5%;
+  border: solid white;
+  cursor: pointer;
+  outline: none;
+  transition: .3s all ease;
+}
+
+.edit-button:hover{
+  color: white;
+  background-color: #f0b3b2;
+}
+
+
+.footer {
+  background-color: #a29baa;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_cols {
+  width:25% ;
+  
+}
+.footer_cols h4 {
+  font-size: 20px;
+  color: #f3d0bd;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer_cols ul li {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #283848;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer_cols .social_media a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(red, green, blue, alpha);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #283848;
+  
+}
+.footer_cols .social_media a:hover {
+  color: #f3d0bd;
+  background-color: rgba(red, green, blue, alpha);
+}

@@ -1,0 +1,140 @@
+<html>
+<head>
+  
+  <title> Kustom Suites</title>
+            <!--To use icons from fontawesome-->
+            <script src="https://kit.fontawesome.com/282935201e.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            
+            <!--To get the fonts from google fonts-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="website icon" type="png" href="logo.jpg">
+  <link rel="stylesheet" href="officialstore.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <p style="font-family: Dancing Script, cursive; color: white;"><b>Kustom Suites</b></p>
+    </div>
+<nav class="nav_list">
+    <ul>
+        <li><a class="active" href = "..\Index.html">Home</a></li>
+        <li><a class="zoom" href = "officialstores.html">Browse</a></li>
+        <li><a class="zoom" href = "..\About_Us\try3.html">About Us</a></li>
+        <li><a class="zoom" href = "..\Kustom_Customer_Profile\customer.html">Account</a></li>
+        <li><b><a onclick="draw()">Sign in</a></b></li>
+        <li><a  href="..\Kustom_Customer_Profile\Orders.html" title="Your Cart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+    </ul>
+</nav>
+
+
+
+    <div id="sign_in_overlay">
+        <div id="sign_in_form">
+
+            <h2>Sign in to Kustom</h2>
+            <div class="account_forms">
+                <form action="" method="post">
+            
+                    <label>Email:</label>
+                        <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                    
+                    <br>
+                    <label>Password:</label>
+                        <input class="data_entry" type="password" name="password" placeholder="password">
+                    <br>
+                    
+                    <input type="radio" name=" Account" value="0"> Business Account
+                    &nbsp;&nbsp;
+                    <input type="radio" name=" Account" value="1"> Normal Accouunt
+                    <br>
+                    <br>
+
+                    <button class="buttonS"  type="reset" name="btnreset" value="clear">Clear</button>
+                    &nbsp;&nbsp;
+                    <button class="buttonS" type="submit" name="btnsubmit" value="Log In">Submit</button>
+
+                    <br>
+                    <br>
+                    <p>Don't have an account?</p>
+                    <a href="create.html">Sign Up</a>
+            
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</header>
+
+<button onclick="topFunction()" id="goUpBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<br>
+
+<img src="top4.png" alt="Top picture" class="slideshow-img">
+<div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+<br>
+
+<div class="container-wrapper">
+  <h2>Categories </h2>
+    <div class="containerss">
+      <div class="picture"><a class="zoom" href = "#"></a><img src="customclothes.webp" alt="Picture 1" class="Categories"></a><p> Clothes</p></div>
+      <div class="picture"><a class="zoom" href = "#"></a><img src="jewelry.webp" alt="Picture 2" class="Categories"></a><p> Jewellery</p></div>
+      <div class="picture"><a class="zoom" href = "#"></a><img src="custompaint.webp" alt="Picture 3" class="Categories"></a><p>Paintings</p></div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-wrapper">
+  <h2>Official Stores</h2>
+  <div class="containerss">
+    <div class="picture"><a class="zoom" href = "..\Store_pages\shana.html"><img src="hooked.jpg" alt="Picture 1"></a><p>Hooked By Shana</p></div>
+    <div class="picture"><a class="zoom" href = "..\Store_pages\debbie.html"><img src="delight.jpg" alt="Picture 2"></a><p>Debbie's Delights</p></div>
+    <div class="picture"><a class="zoom" href = "#"><img src="image3.webp" alt="Picture 3"></a><p>Sipping Station</p></div>
+  </div>
+</div>
+
+<br>
+
+<footer class="footer">
+    <div class="row">
+        <div class="footer_cols">
+            <h4>Follow Us</h4>
+                <div class="social_media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+        </div>
+        <div class="footer_cols">
+            <h4>Contact Us</h4>
+            <ul>
+            <li>Kustom Warehouse, Moi Avenue,Nairobi, Kenya</li>
+            <li>Phone: +254123456789, +254789654321</li>
+            <li>Email: kustomsuites@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+

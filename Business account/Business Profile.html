@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="profile_1.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/282935201e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            
+  <title>Business profile</title>
+  
+</head>
+<body>
+<!-- Header -->
+  <header>
+    
+    <div class="logo-container">
+        <p style="font-family: Dancing Script, cursive;"><b>Kustom Suites</b></p>
+    </div>
+
+    <nav class="nav_list">
+      <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#analytics">Analytics</a></li>
+          <li><a class="active" href = "..\Index.html">Home</a></li>
+          <li><a class="zoom" href = "..\Browse\officialstores.html">Browse</a></li>
+          <li><a class="zoom" href = "..\About_Us\try3.html">About Us</a></li>
+          <li><a class="zoom" href = "Business Profile.html">Account</a></li>
+          <!--<li><b><a onclick="draw()">Sign in</a></b></li>-->
+      </ul>
+    </nav>
+
+    <!--<div id="sign_in_overlay" style="display: none;">
+      <div id="sign_in_form">
+
+          <h2>Sign in to Kustom</h2>
+          <div class="account_forms">
+              <form action="" method="post">
+          
+                  <label>Email:</label>
+                      <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                  
+                  <br>
+                  <label>Password:</label>
+                      <input class="data_entry" type="password" name="password" placeholder="password">
+                  <br>
+                  
+                  <input type="radio" name="Business Account" value="0"> Business Account
+                  &nbsp;&nbsp;
+                  <input type="radio" name="Normal Accouunt" value="1"> Normal Accouunt
+                  <br>
+                  <br>
+
+                  <input class = "button" type="reset" name="btnreset" value="clear">
+                  &nbsp;&nbsp;
+                  <input class = "button" type="submit" name="btnsubmit" value="Log In">
+
+                  <br>
+                  <br>
+                  <p>Don't have an account?</p>
+                  <a href="create.html">Sign Up</a>
+          
+              </form>
+          </div>
+      </div>
+    </div>-->
+  </header>
+
+  <button onclick="topFunction()" id="goUpBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+<main id="contents">
+  <div class="Dashboard-div">
+    <h2 id="dashboard">Dashboard</h2>
+    <h3>Business Info</h3>
+    <img  id="profile-img" src="blank-profile-picture.jpg" alt="This is your Profile Picture" title="Profile Picture"/>
+    <p>Business name: Hooked by Shana</p>
+    <p>Business email: </p>
+    <p>Head Office Address:</p>
+    <p>Company Tel:+254 7223 35 66 35</p>
+    <p>Website Address: </p>
+    <p>Owner: Natasha & Sharon</p>
+    <p>Contact info: 
+      +254 7223 35 66 35 (Natasha)
+      +254 7923 35 66 36 (Sharon)
+    </p> 
+    <br> 
+    <button id="edit-button">Update  Business Information</button>
+  </div>
+
+  <div class="main-content">
+    <h2 id="content">Content</h2>
+    <div class="top-selling stats-box">
+      <h3 class="heading">Top Selling Products</h3>
+      <table class="top-selling-products" height="100%" width="100%">
+        <tr>
+          <th>ID</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Sold</th>
+        </tr>
+
+        <tr>
+          <td>68231</td>
+          <td>
+            <div class="product-name flex">
+              <p>Amazon Kindle 4th Gen</p>
+            </div>
+          </td>
+          <td>Ksh190,000</td>
+          <td>351</td>
+        </tr>
+
+        <tr>
+          <td>68231</td>
+          <td>
+            <div class="product-name iphone flex">
+              <div class="icon">
+                
+              </div>
+              <p>Iphone 11 Pro</p>
+            </div>
+          </td>
+          <td>Ksh130,000</td>
+          <td>121</td>
+        </tr>
+
+        <tr>
+          <td>68231</td>
+          <td>
+            <div class="product-name windows flex">
+              <div class="icon">
+                
+              </div>
+              <p>Windows 11</p>
+            </div>
+          </td>
+          <td>Ksh1,800</td>
+          <td>195</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="analyticsdiv">
+    <h2 id="analytics">Analytics</h2>
+    <div class="stats flex">
+      <div class="stats-box sales">
+        <h2 class="heading">Sales</h2>
+        <canvas id="sales"></canvas>
+      </div>
+
+      <div class="stats-box earning">
+        <h2 class="heading">Earning</h2>
+        <div class="earning-amount flex-c">
+
+          <p>Total Earnings - $9125.33</p>
+        </div>
+        <canvas id="earning"></canvas>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer_cols">
+                <h4>Follow Us</h4>
+                    <div class="social_media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+            </div>
+            <div class="footer_cols">
+                <h4>Contact Us</h4>
+                <ul>
+                <li>Kustom Warehouse, Moi Avenue,Nairobi, Kenya</li>
+                <li>Phone: +254123456789, +254789654321</li>
+                <li>Email: kustomsuites@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("goUpBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    //document.body.scrollTop = 0;
+    //document.documentElement.scrollTop = 0;
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+</script>   
+<script>
+  // sign in popup control
+
+  var popup = document.getElementById("sign_in_overlay");
+  
+  popup.addEventListener("click", function(e){
+      
+      if (e.target !== this)
+      {
+          return;
+      }
+      popup.style.display = "none";
+      console.log("withdrawn");   
+  });
+
+  function draw(){
+      popup.style.display = "block";   
+      console.log("drawn");         
+  }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="graphs.js"></script>
+</body>
+</html>

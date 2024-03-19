@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <!--To use icons from fontawesome-->
+        <script src="https://kit.fontawesome.com/282935201e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        <!--To get the fonts from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title> Kustom Suites</title>
+        <link rel = "stylesheet" href = "home_common.css">
+    </head>
+    
+    <body  class="bground" background="bg.jpg">
+        <header>
+            <div class="logo-container">
+                <p style="font-family: Dancing Script, cursive;"><b>Kustom Suites</b></p>
+            </div>
+        <nav class="nav_list">
+        <ul>
+            <li><a class="active" href = "#">Home</a></li>
+            <li><a class="zoom" href = "#">Browse</a></li>
+            <li><a class="zoom" href = "#">About Us</a></li>
+            <li><a class="zoom" href = "#">Account</a></li>
+            <li><a onclick="draw()">Sign in</a></li>
+            <li><a  href="#" title="Your Cart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li> 
+        </ul>
+        </nav>
+
+        <div id="sign_in_overlay">
+            <div id="sign_in_form">
+
+                <h2>Sign in to Kustom Suites</h2>
+                <div class="account_forms">
+                    <form action="" method="post">
+                
+                        <label>Email:</label>
+                            <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                        
+                        <br>
+                        <label>Password:</label>
+                            <input class="data_entry" type="password" name="password" placeholder="password">
+                        <br>
+                        
+                        <input type="radio" name="Business Account" value="0"> Business Account
+                        &nbsp;&nbsp;
+                        <input type="radio" name="Normal Accouunt" value="1"> Normal Accouunt
+                        <br>
+                        <br>
+
+                        <input class = "button" type="reset" name="btnreset" value="clear">
+                        &nbsp;&nbsp;
+                        <input class = "button" type="submit" name="btnsubmit" value="Log In">
+
+                        <br>
+                        <br>
+                        <p>Don't have an account?</p>
+                        <a href="create.html">Sign Up</a>
+                
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </header>
+        <div id="home_banner">
+            <div>
+                <br>
+            <h1><b>Kustom Suites</b></h1>
+            <p style="font-size: 30px;"><b>A One-Stop Shop For All Things Custom.</b></p>
+            
+            </div>
+         </div>
+         
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_cols">
+                        <h4>Follow Us</h4>
+                            <div class="social_media">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                    </div>
+                    <div class="footer_cols">
+                        <h4>Contact Us</h4>
+                        <ul>
+                        <li>Kustom Warehouse, Moi Avenue,Nairobi, Kenya</li>
+                        <li>Phone: +254123456789, +254789654321</li>
+                        <li>Email: kustomsuites@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            // sign in popup control
+    
+            var popup = document.getElementById("sign_in_overlay");
+            
+            popup.addEventListener("click", function(e){
+                
+                if (e.target !== this)
+                {
+                    return;
+                }
+                popup.style.display = "none";
+                console.log("withdrawn");   
+            });
+    
+            function draw(){
+                popup.style.display = "block";   
+                console.log("drawn");         
+            }
+    
+        </script>
+        
+    </body>
+</html>

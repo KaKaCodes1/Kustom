@@ -1,0 +1,222 @@
+/*
+In the navy #283848
+Ash Violet #a29baa
+Hopeful #f0b3b2
+Peach blossom #f3d0bd
+*/
+
+*{
+    margin: 0px;   
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #283848;
+
+}
+
+.create_body
+{
+    display: flex;
+    flex-direction: column;
+    font-family:Montserrat Alternates, sans-serif;
+}
+
+
+.create_container{
+    width: 100%;
+    /*background-color: lightgrey;*/
+    background-color: #ffe5b4ef;
+    
+    padding-bottom: 50px;
+    padding-top: 20px;
+    min-height: 600px;
+    
+    font-family:Montserrat Alternates, sans-serif;
+    
+}
+
+.join{
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 450px;
+    min-width: 450px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    
+}
+
+.form_container{
+    /*background-color: lightcyan;*/
+    height: 100%;
+}
+
+.banner{
+    border: 2px solid black;
+    text-align: end;
+    height: 130px;
+    background-color: #a29baa ;
+    background-image: url("banner_1.jfif");
+    background-repeat:no-repeat ;
+    background-size: 70% 130px ;
+
+    color: #283848;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    width: 110%;
+    margin-bottom: 70px;
+    position: relative;
+    right: 5%;
+}
+
+.sign_up_option{
+    background-color: #f4e9e3da;
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form_select{
+    border: 0px solid black;
+    font-size: large;
+    height: 30px;
+    background-color: #f3d0bd;
+    cursor: pointer;
+    text-align: end;
+
+    transition: transform 0.2s;
+}
+
+.form_select:click{
+    background-color: #39373b;
+}
+.active_form, .form_select:hover{
+    background-color: #d4a388;
+    color: aliceblue;
+
+    transform: scale(1.08);
+
+}
+
+.collapsible
+{
+    border: 0px solid black;
+    background-color: #f4f1f0;
+    max-height: 300px;
+    display: none;
+    overflow-y: auto;
+    padding: 10px;
+
+    transition: display 0.2s;
+}
+
+#register_business{
+    max-height: 500px;
+}
+
+
+
+
+/*Common Sign in page styling*/
+#sign_in_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #1b1a1dc4;
+
+    position: fixed;
+    display: none; /*Hide or reveal sign in form*/
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#sign_in_form{
+    background-color: #e3bca7c9;
+    border-left: #283848 5px solid;
+    color: #283848;
+    
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 55%;
+    min-width: 300px;
+    
+
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+    
+
+}
+
+#sign_in_form> h2{
+    color: aliceblue;
+    border: #283848;
+    margin-bottom: 20px;
+    
+}
+
+.account_forms > form > .data_entry{
+    margin-bottom: 20px;
+    
+    padding: 5px;
+    border: none;
+    width: 70%;
+    min-width: 200px;
+    border-bottom:2px solid #39373b;
+}
+
+.account_forms > form > label{
+    display: inline-block;
+    width: 150px;
+    font-weight: 400;
+
+}
+
+.account_forms > form > textarea{
+    
+    width: 60%;
+    height:100px;
+}
+
+
+
+/*common button styling*/
+.form_button
+{
+    padding: 9px 25px;
+    background-color: #a29baabb;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    padding: 9px 25px;
+   
+   
+    border-radius: 50px;
+    
+   
+    font-weight: 100px;
+    font-size: 15px;
+    color: white;
+   
+}
+
+.form_button:hover{
+    background-color: #a29baa;
+    color: #283848;
+}

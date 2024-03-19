@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debbie's Delights</title>
+    <link rel="icon" href="stores_images\kustom.png">
+    <link rel="stylesheet" href="stores_css\styles.css">
+    <!--To use icons from fontawesome-->
+    <script src="https://kit.fontawesome.com/282935201e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!--To get the fonts from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <p style="font-family: Dancing Script, cursive; color: #ffffff;"><b>Kustom Suites</b></p>
+        </div>
+    <nav class="nav_list">
+        <ul>
+            <li><a class="active" href = "..\Index.html">Home</a></li>
+            <li><a class="zoom" href = "..\Browse\officialstores.html">Browse</a></li>
+            <li><a class="zoom" href = "..\About_Us\try3.html">About Us</a></li>
+            <li><a class="zoom" href = "..\Kustom_Customer_Profile\customer.html">Account</a></li>
+            <li><b><a onclick="draw()">Sign in</a></b></li>
+            <li><a  href="..\Kustom_Customer_Profile\Orders.html" title="Your Cart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </nav>
+
+
+    
+        <div id="sign_in_overlay">
+            <div id="sign_in_form">
+
+                <h2>Sign in to Kustom Suites</h2>
+                <div class="account_forms">
+                    <form action="" method="post">
+                
+                        <label>Email:</label>
+                            <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                        
+                        <br>
+                        <label>Password:</label>
+                            <input class="data_entry" type="password" name="password" placeholder="password">
+                        <br>
+                        
+                        <input type="radio" name="Account" value="0"> Business Account
+                        &nbsp;&nbsp;
+                        <input type="radio" name="Account" value="1"> Normal Accouunt
+                        <br>
+                        <br>
+
+                        <button class="buttonS"  type="reset" name="btnreset" value="clear">Clear</button>
+                        &nbsp;&nbsp;
+                        <button class="buttonS" type="submit" name="btnsubmit" value="Log In">Submit</button>
+
+                        <br>
+                        <br>
+                        <p>Don't have an account?</p>
+                        <a href="create.html">Sign Up</a>
+                
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </header>
+
+    <div class="shanaheader">
+       <img class="ourlogo" src="stores_images\debbielogotrs.png" alt="banner">
+    <div>
+
+     <button onclick="topFunction()" id="goUpBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <div class="mainsection">
+    <div class="myflexcontainer"><!--Will come in handy when making resposive-->
+        <div class="picholder">
+        <img class="profilepic" src="stores_images\debbielogo.jpg" alt="profile picture">
+        </div>
+
+        <div class="infoholder">
+            <h2>Debbie's Delight</h2>
+            <p>🍰Freshly baked with love❣️</p>
+            <p>🍰Dealers in pastries</p>
+            <p>🍰Find us on Instagram, <a href="https://www.instagram.com/debbie_.delights?igsh=OWR3cm84Y2hreGZj" target="_blank">@debbie_.delights</a></p>
+            <p>🍰Call us, 📞 0705506380 </p>
+        </div>
+    </div>
+
+   
+
+    <div class="product-section">
+
+        <div class="product-card">
+            <h2>Cupcakes</h2>
+            <div class="productholder">
+            <img src="stores_images\cupcakes.jpg" alt="">
+            </div>
+            <form>
+                 <h3>Sh200 for each</h3>
+                 <label for="flavour-select"><b>Flavour:</b></label><br>
+                 <select name="flavour" id="flavour" title="flavour">
+                     <option value=""></option>
+                     <option value="Chocolate">Chocolate</option>
+                     <option value="Vanilla">Vanilla</option>
+                     <option value="Strawberry">Strawberry</option>
+                 </select>
+                <br>
+                <br>
+                <label for="quantity"><b>Quantity:</b></label><br>
+                <input type="number" id="quantity" name="quantity">
+                <br>
+                <br>
+                <!--<label for="Price"><b>Price:</b></label><br>
+                <input type="number" id="price" name="price" value="200" readonly>
+                <br>
+                <br>-->
+                <button class="btn" type="submit">
+                <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <span class="buy"></b>Get now</b></span>
+                </button>
+
+            </form>
+        </div><!--end of product-card-->
+       
+        <div class="product-card">
+            <h2>Doughnuts</h2>
+            <div class="productholder">
+            <img src="stores_images\donuts.jpg" alt="">
+            </div>         
+            <form>
+                 <h3>Sh150 for each</h3>
+                <label for="flavour-select"><b>Flavour:</b></label><br>
+                <select name="flavour" id="flavour" title="flavour">
+                    <option value=""></option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Strawberry">Strawberry</option>
+                </select>
+                <br>
+                <br>
+                <label for="quantity"><b>Quantity:</b></label><br>
+                <input type="number" id="quantity" name="quantity">
+                <br>
+                <br>
+                <button class="btn" type="submit">
+                <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <span class="buy"><b>Get now</b></span>
+                </button>	
+            </form>
+        </div><!--end of product-card-->
+
+        <div class="product-card">
+            <h2>Birthday Cakes</h2>
+            <div class="productholder">
+            <img src="stores_images\bday.png" alt="">
+            </div>          
+            <form>
+                 <h3>Sh1000 for each kg</h3>
+                 <label for="flavour-select"><b>Flavour:</b></label><br>
+                 <select name="flavour" id="flavour" title="flavour">
+                     <option value=""></option>
+                     <option value="Chocolate">Chocolate</option>
+                     <option value="Vanilla">Vanilla</option>
+                     <option value="Strawberry">Strawberry</option>
+                 </select>
+                <br>
+                <br>
+                <label for="weight"><b>Weight:</b></label><br>
+                <input type="number" id="weight" name="weight">
+                <br>
+                <br>
+                <button class="btn" type="submit">
+                <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <span class="buy"><b>Get now</b></span>
+                </button>	
+            </form>
+        </div><!--end of product-card-->
+
+            <div class="product-card">
+                <h2>Cookies</h2>
+                <div class="productholder">
+                <img src="stores_images\cookie.jpg" alt="">
+                </div>              
+                <form>
+                     <h3>Sh350 for a pack</h3>
+                     <label for="flavour-select"><b>Flavour:</b></label><br>
+                     <select name="flavour" id="flavour" title="flavour">
+                         <option value=""></option>
+                         <option value="Chocolate">Chocolate</option>
+                         <option value="Vanilla">Vanilla</option>
+                         <option value="Ginger">Ginger</option>
+                     </select>
+                    <br>
+                    <br>
+                    <label for="quantity"><b>Quantity:</b></label><br>
+                    <input type="number" id="quantity" name="quantity">
+                    <br>
+                    <br>
+                    <button class="btn" type="submit">
+                    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    <span class="buy"><b>Get now</b></span>
+                    </button>	   
+                </form>    
+            </div><!--end of product-card-->
+
+                <div class="product-card">
+                    <h2>Croissants</h2>
+                    <div class="productholder">
+                    <img src="stores_images\croissant.jpg" alt="">
+                    </div>                  
+                    <form>
+                         <h3>Sh250 for each</h3>
+                         <label for="flavour-select"><b>Flavour:</b></label><br>
+                         <select name="flavour" id="flavour" title="flavour">
+                             <option value=""></option>
+                             <option value="Chocolate">Chocolate</option>
+                             <option value="Vanilla">Vanilla</option>
+                             <option value="Cinammon">Cinammon</option>
+                         </select>
+                        <br>
+                        <br>
+                        <label for="quantity"><b>Quantity:</b></label><br>
+                        <input type="number" id="quantity" name="quantity">
+                        <br>
+                        <br>
+                        <button class="btn" type="submit">
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy"><b>Get now</b></span>
+                        </button>	       
+                    </form>       
+                </div><!--end of product-card-->
+
+                    <div class="product-card">
+                        <h2>Fruit Pies</h2>
+                        <div class="productholder">
+                        <img src="stores_images\fruitpie.jpg" alt="">
+                        </div>                      
+                        <form>
+                             <h3>Sh500 for each</h3>
+                             <label for="flavour-select"><b>Flavour:</b></label><br>
+                             <select name="flavour" id="flavour" title="flavour">
+                                 <option value=""></option>
+                                 <option value="Apple">Apple</option>
+                                 <option value="Blueberry">Blueberry</option>
+                                 <option value="Strawberry">Strawberry</option>
+                                 <option value="Pumpkin">Pumpkin</option>
+                             </select>
+                            <br>
+                            <br>
+                            <label for="quantity"><b>Quantity:</b></label><br>
+                            <input type="number" id="quantity" name="quantity">
+                            <br>
+                            <br>
+                            <button class="btn" type="submit">
+                            <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <span class="buy"><b>Get now</b></span>
+                            </button>	           
+                        </form>           
+                    </div><!--end of product-card-->
+
+    </div><!--end of product-section-->
+    </div><!--end of main section-->
+
+    <footer class="footer">
+
+            <div class="row">
+                <div class="footer_cols">
+                    <h4>Follow Us</h4>
+                        <div class="social_media">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                </div>
+                <div class="footer_cols">
+                    <h4>Contact Us</h4>
+                    <ul>
+                    <li>Kustom Warehouse, Moi Avenue,Nairobi, Kenya</li>
+                    <li>Phone: +254123456789, +254789654321</li>
+                    <li>Email: kustomsuites@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>//create the go up button
+    // Get the button
+    let mybutton = document.getElementById("goUpBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      //document.body.scrollTop = 0;
+      //document.documentElement.scrollTop = 0;
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+        // sign in popup control
+
+        var popup = document.getElementById("sign_in_overlay");
+    
+    popup.addEventListener("click", function(e){
+        
+        if (e.target !== this)
+        {
+            return;
+        }
+        popup.style.display = "none";
+        console.log("withdrawn");   
+    });
+
+    function draw(){
+        popup.style.display = "block";   
+        console.log("drawn");         
+    }
+    </script>
+    </body>
+</html>

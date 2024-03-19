@@ -1,0 +1,332 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Montserrat Alternates, sans-serif;
+    background-color: #ffe5b4ef; 
+    font-size: 100%; 
+   
+}
+
+.bground {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    background-color: #a29baa;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-weight: 1000px;
+    font-size: 100px;
+    color: white;
+    margin-right: 20px;
+}
+.nav_list {
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+ul li a {
+    text-decoration: none;
+    font-weight: 100px;
+    font-size: 15px;
+    font-family: Montserrat Alternates, sans-serif;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+ul li a:hover {
+    background-color: #283848;
+    color: white;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+}
+ul li a:active {
+    background-color: #283848;
+    color: #283848;
+}
+button:hover {
+    background-color: #a29baa;
+}
+
+/*Common Sign in page styling*/
+.buttonS{
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    outline: none;
+    background-color: #f0b3b2;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttonS:hover{
+    background-color: #283848;
+    color: white;
+  }
+#sign_in_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #1b1a1dc4;
+
+    position: fixed;
+    display: none; /*Hide or reveal sign in form*/
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#sign_in_form{
+    background-color: #e3bca7c9;
+    border-left: #283848 5px solid;
+    color: #283848;
+    
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 55%;
+    min-width: 300px;
+    
+
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+    
+
+}
+
+#sign_in_form> h2{
+    color: aliceblue;
+    border: #283848;
+    margin-bottom: 20px;
+    
+}
+
+.account_forms > form > .data_entry{
+    margin-bottom: 20px;
+    
+    padding: 5px;
+    border: none;
+    width: 70%;
+    min-width: 200px;
+    border-bottom:2px solid #39373b;
+}
+
+.account_forms > form > label{
+    display: inline-block;
+    width: 150px;
+    font-weight: 400;
+
+}
+
+.account_forms > form > textarea{
+    
+    width: 60%;
+    height:100px;
+}
+
+
+h1{
+    text-align: center;
+    color: #283848;
+    font-style: normal;
+    left: 50%;
+    bottom: 10%;
+    font-family: Montserrat Alternates, sans-serif;
+}
+
+p{
+    text-align: center;
+    color: rgb(224, 245, 220);
+    font-family: Montserrat Alternates, sans-serif;
+    font-style: normal;
+}
+
+#home_banner
+{
+    background-color:#a29aab6c;
+    height: 450px;
+    width:50%;
+    font-size: 50px;
+    font-family:Montserrat Alternates, sans-serif;
+        
+
+
+    position: relative;
+    top: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#home_banner > button 
+{
+    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    padding: 9px 25px;
+    background-color: #a29baa;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 100px;
+    font-size: 15px;
+    color: white;
+}
+#home_banner > button :hover {
+    background-color: #a29baa;
+    color: #283848;
+}
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+/*CSS for footer*/
+ul {
+    list-style: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    background-color: #a29baa;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+
+}
+.footer_cols {
+    width:100%;
+    padding-top: 5px;
+    
+}
+.footer_cols h4 {
+    font-size: 20px;
+    color: #f3d0bd;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    font-family:Montserrat Alternates, sans-serif;
+}
+
+.footer_cols ul li {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #283848;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+    font-family:Montserrat Alternates, sans-serif;
+    
+}
+.footer_cols .social_media a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(red, green, blue, alpha);
+    margin: 0 10px 10px 0 ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #283848;
+    
+}
+.footer_cols .social_media a:hover {
+    color: #f3d0bd;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+/*go up button*/
+#goUpBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f0b3b2;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  
+  }
+  
+  #goUpBtn:hover {
+    background-color: #283848;
+  }
+  #goUpBtn img{
+    width: 20px;
+    height: 20px;
+  }
+/*Style specific for my page*/
+
+section.about {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f0b3b2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containerc {
+        width: 100%;
+        overflow: hidden; /* Clearfix */
+    }
+
+    .float-left {
+        float: left;
+        width: 50%; /* Half of the container width */
+    }
+
+    .float-right {
+        float: right;
+        width: 50%; /* Half of the container width */
+    }
+
+    /* Clearfix to prevent container from collapsing */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+

@@ -1,0 +1,345 @@
+/*  Theme Colours
+        In the navy #283848
+        Ash Violet #a29baa
+        Hopeful #f0b3b2
+        Peach blossom #f3d0bd*/
+body{
+    font-family:Montserrat Alternates,sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+h1{
+    font-size:x-large;
+    color:#283848;
+    text-align:left;
+    background-size: cover;
+    text-align: left;
+
+}
+h2{
+    font-size:large;
+    color:#283848;
+    text-align:left;
+    background-size: cover;
+}
+.grid1 { grid-area: header; 
+    padding: 14px;
+    background-color:#a29baa;}
+
+    .grid1 h1{
+        font-size:large;
+        color:#ccc;
+        text-decoration:none;
+        text-shadow: 50px;
+        text-emphasis-color: black;
+        text-align: left;
+    
+    }
+    header {
+      background-color: #a29baa;
+      padding:10px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      /*font-weight: 1000px;
+      font-size: 100px;*/
+      color: white;
+    }
+    .nav_list {
+      border-radius: 20px;
+    
+      font-weight: 400;
+    }
+    ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 0px 20px;
+    }
+    ul li a {
+      text-decoration: none;
+      font-weight: 100px;
+      font-size: 15px;
+      font-family: Montserrat Alternates, sans-serif;
+      color: white;
+      transition: all 0.3s ease 0s;
+    }
+    ul li a:hover {
+      background-color: #283848;
+      color: white;
+      padding-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      border-radius: 20px;
+    }
+    ul li a:active {
+      background-color: #283848;
+      color: #283848;
+    }
+    button:hover {
+      background-color: #a29baa;
+    }
+    
+.grid2 { grid-area: menu; 
+    padding-left:120px;
+    padding-top: 70px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+    background-color: #f3d0bd;
+    text-align: left;
+  
+    }
+    .sidemenu{
+      width: 310px;
+      position: absolute;
+      left: 0;
+      z-index: 1;
+    }
+      .sidemenu button {
+        border-radius: 5px;
+        border-style:inset;
+        border:0.5%;
+        border-color: grey;
+        text-align: center;
+        font-size: 17px;
+        padding:35px;
+        width: 320px;
+        transition: all 0.2s;
+        cursor: pointer;
+        margin: 5px;
+        background-color:#283848;
+      }
+      .sidemenu button a{
+        font-family:Montserrat Alternates,sans-serif;
+        color:#f3d0bd;
+        text-decoration: none;
+        display:block;
+        width:100%;
+        height:100%;
+      }
+
+      .sidemenu button span {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        transition: 0.5s;
+        color:#f3d0bd;
+      }
+      
+      .sidemenu button span:after {
+        content: '\00bb';
+        position:absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        color: #f3d0bd;
+      }
+      
+      .sidemenu button:hover span {
+        padding-right: 25px;
+      }
+
+      
+      .sidemenu button:hover span:after {
+        opacity: 1;
+        right: 0;
+        color:#f3d0bd;
+      }
+
+.grid3 { grid-area: profile; 
+    padding: 70px;
+    background-color: white;
+    text-align: left;}
+.grid4 { grid-area: address; 
+    padding: 59px;
+    background-color: white;
+    text-align: left;}
+.grid5 { grid-area: settings; 
+    padding: 40px;
+    background-color: white;}
+    .grid5 table tr td{
+        border-radius: 10px;
+        background-color:whitesmoke;
+        border:0px;
+        border-spacing: 10px;
+        text-align: left;
+        transition: all 0.2s;
+        cursor: pointer;
+        padding:15px;
+
+    }
+    .grid5 table tr td a{
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      width:100%;
+      height:100%;
+
+    }
+
+    .grid5 table tr :hover{
+      color:#f3d0bd;
+      
+    }
+    .grid5 table tr td:hover{
+      color:#f3d0bd;
+      background-color: #283848;
+    }
+
+.grid6 { grid-area: footer;
+    padding: 30px; 
+    background-color: #a29baa;}
+
+.grid-container {
+    display: grid;
+    background-color:#283848;
+    column-gap: 5px;
+    row-gap: 5px;
+    width:fit-content;
+    grid-template-areas:
+        'header header header header header header'
+        'menu menu profile profile address address'
+        'menu menu settings settings settings settings'
+        'footer footer footer footer footer footer';
+
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+.buttons{
+    background-color:#f3d0bd;
+    color:#283848;
+    width:fit-content;
+    height:5px;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+.buttons:hover{
+    background-color:#283848;
+    color:#f3d0bd;
+    text-decoration: none;
+}
+
+
+.footer {
+  background-color: #a29baa;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+.footer_cols {
+  width:100% ;
+  padding-top: 5px;  
+}
+.footer_cols h4 {
+  font-size: 20px;
+  color: #f3d0bd;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer_cols ul li {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #283848;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: all 0.3s ease;
+
+  
+}
+.footer_cols .social_media a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(red, green, blue, alpha);
+  margin: 0 10px 10px 0 ;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #283848;
+  
+}
+.footer_cols .social_media a:hover {
+  color: #f3d0bd;
+  background-color: rgba(red, green, blue, alpha);
+}
+
+/*go up button*/
+#goUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f0b3b2;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+}
+
+#goUpBtn:hover {
+  background-color: #283848;
+}
+#goUpBtn img{
+  width: 20px;
+  height: 20px;
+}
+
+table tr td{
+  border-radius: 10px;
+        background-color:whitesmoke;
+        border:0px;
+        border-spacing: 10px;
+        text-align: left;
+        transition: all 0.2s;
+        cursor: pointer;
+        padding:15px;
+
+}
+table tr td a{
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width:100%;
+  height:100%;
+
+}
+
+table tr :hover{
+  color:#f3d0bd;
+  
+}
+table tr td:hover{
+  color:#f3d0bd;
+  background-color: #283848;
+}
+
+
+    
+
+
+  
