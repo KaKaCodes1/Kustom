@@ -199,8 +199,8 @@ h2{
 
 .grid-container {
     display: grid;
-    background-color:#283848;
-    column-gap: 5px;
+    background-color:#f3d0bd;
+    column-gap: 4px;
     row-gap: 5px;
     width:fit-content;
     grid-template-areas:
