@@ -1,4 +1,5 @@
 <?php
+$b_ID=0;
 #This is responsible for connecting the forms to the database
 $servername = "localhost";
 $username = "root";
