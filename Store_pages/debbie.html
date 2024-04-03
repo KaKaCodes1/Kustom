@@ -106,7 +106,7 @@
             <div class="productholder">
             <img src="stores_images\cupcakes.jpg" alt="">
             </div>
-            <form action="" method="post">
+            <form action="debbieinsert.php" method="post">
                  <h3>Sh200 for each</h3>
                  <label for="flavour-select"><b>Flavour:</b></label><br>
                  <select name="flavour" id="flavour" title="flavour">
@@ -123,8 +123,10 @@
                 <br>
 
                 <input type="hidden"  name="itemName" value="Cupcakes">
-                <input type="hidden"  name="itemID" value="001">
-                <input type="hidden"  name="price" value="">
+                <input type="hidden"  name="itemID" value="">
+                <input type="hidden"  name="price" value="200">
+                <input type="hidden"  name="desc" value="">
+                <input type="hidden"  name="b_id" value="">
 
                 <button class="btn" type="submit">
                 <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
@@ -145,7 +147,7 @@
             <div class="productholder">
             <img src="stores_images\donuts.jpg" alt="">
             </div>         
-            <form>
+            <form  action="debbieinsert.php" method="post">
                  <h3>Sh150 for each</h3>
                 <label for="flavour-select"><b>Flavour:</b></label><br>
                 <select name="flavour" id="flavour" title="flavour">
@@ -162,8 +164,11 @@
                 <br>
                 
                 <input type="hidden"  name="itemName" value="Doughnuts">
-                <input type="hidden"  name="itemID" value="002">
-                <input type="hidden"  name="price" value="">
+                <input type="hidden"  name="itemID" value="">
+                <input type="hidden"  name="price" value="150">
+                <input type="hidden"  name="StoreID" value="">
+                <input type="hidden"  name="desc" value="">
+                <input type="hidden"  name="b_id" value="0">
 
                 <button class="btn" type="submit">
                 <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
@@ -183,7 +188,7 @@
             <div class="productholder">
             <img src="stores_images\bday.png" alt="">
             </div>          
-            <form>
+            <form  action="debbieinsert.php" method="post" >
                  <h3>Sh1000 for each kg</h3>
                  <label for="flavour-select"><b>Flavour:</b></label><br>
                  <select name="flavour" id="flavour" title="flavour">
@@ -199,9 +204,12 @@
                 <br>
                 <br>
                                 
-                <input type="hidden"  name="itemName" value="Birthday_Cakes">
-                <input type="hidden"  name="itemID" value="003">
-                <input type="hidden"  name="price" value="">
+                <input type="hidden"  name="itemName" value="Birthday Cakes">
+                <input type="hidden"  name="itemID" value="">
+                <input type="hidden"  name="price" value="1000">
+                <input type="hidden"  name="StoreID" value="">
+                <input type="hidden"  name="desc" value="">
+                <input type="hidden"  name="b_id" value="0">
 
                 <button class="btn" type="submit">
                 <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
@@ -221,14 +229,14 @@
                 <div class="productholder">
                 <img src="stores_images\cookie.jpg" alt="">
                 </div>              
-                <form>
+                <form  action="debbieinsert.php" method="post">
                      <h3>Sh350 for a pack</h3>
                      <label for="flavour-select"><b>Flavour:</b></label><br>
                      <select name="flavour" id="flavour" title="flavour">
                          <option value=""></option>
                          <option value="Chocolate">Chocolate</option>
                          <option value="Vanilla">Vanilla</option>
-                         <option value="Ginger">Ginger</option>
+                         <option value="Strawberry">Strawberry</option>
                      </select>
                     <br>
                     <br>
@@ -238,8 +246,11 @@
                     <br>
                                         
                     <input type="hidden"  name="itemName" value="Cookies">
-                    <input type="hidden"  name="itemID" value="004">
-                    <input type="hidden"  name="price" value="">
+                    <input type="hidden"  name="itemID" value="">
+                    <input type="hidden"  name="price" value="350">
+                    <input type="hidden"  name="StoreID" value="">
+                    <input type="hidden"  name="desc" value="">
+                    <input type="hidden"  name="b_id" value="0">
 
                     <button class="btn" type="submit">
                     <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
@@ -259,14 +270,14 @@
                     <div class="productholder">
                     <img src="stores_images\croissant.jpg" alt="">
                     </div>                  
-                    <form>
+                    <form  action="debbieinsert.php" method="post" >
                          <h3>Sh250 for each</h3>
                          <label for="flavour-select"><b>Flavour:</b></label><br>
                          <select name="flavour" id="flavour" title="flavour">
                              <option value=""></option>
                              <option value="Chocolate">Chocolate</option>
                              <option value="Vanilla">Vanilla</option>
-                             <option value="Cinammon">Cinammon</option>
+                             <option value="Strawberry">Strawberry</option>
                          </select>
                         <br>
                         <br>
@@ -276,8 +287,11 @@
                         <br>
                                                 
                         <input type="hidden"  name="itemName" value="Croissants">
-                        <input type="hidden"  name="itemID" value="005">
-                        <input type="hidden"  name="price" value="">
+                        <input type="hidden"  name="itemID" value="">
+                        <input type="hidden"  name="price" value="250">
+                        <input type="hidden"  name="StoreID" value="">
+                        <input type="hidden"  name="desc" value="">
+                        <input type="hidden"  name="b_id" value="0">
 
                         <button class="btn" type="submit">
                         <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
@@ -297,15 +311,14 @@
                         <div class="productholder">
                         <img src="stores_images\fruitpie.jpg" alt="">
                         </div>                      
-                        <form>
+                        <form  action="debbieinsert.php" method="post" >
                              <h3>Sh500 for each</h3>
                              <label for="flavour-select"><b>Flavour:</b></label><br>
                              <select name="flavour" id="flavour" title="flavour">
                                  <option value=""></option>
-                                 <option value="Apple">Apple</option>
-                                 <option value="Blueberry">Blueberry</option>
+                                 <option value="Chocolate">Chocolate</option>
+                                 <option value="Vanilla">Vanilla</option>
                                  <option value="Strawberry">Strawberry</option>
-                                 <option value="Pumpkin">Pumpkin</option>
                              </select>
                             <br>
                             <br>
@@ -315,8 +328,11 @@
                             <br>
                                                                                 
                             <input type="hidden"  name="itemName" value="Fruit Pies">
-                            <input type="hidden"  name="itemID" value="006">
-                            <input type="hidden"  name="price" value="">
+                            <input type="hidden"  name="itemID" value="">
+                            <input type="hidden"  name="price" value="500">
+                            <input type="hidden"  name="StoreID" value="">
+                            <input type="hidden"  name="desc" value="">
+                            <input type="hidden"  name="b_id" value="0">
 
                             <button class="btn" type="submit">
                             <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
