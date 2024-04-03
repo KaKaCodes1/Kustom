@@ -8,7 +8,7 @@ include 'shanaconnect.php';
 
 
 #This is responsible for inserting data from the forms into the table in the database
-$sql= "INSERT INTO products(b_ID, p_name, p_description, price, quantity, p_size,colour ) VALUES('$b_ID', '$p_name', '$p_description', '$price', '$quantity', '$p_size','$colour')";
+$sql= "INSERT INTO shana(b_ID, item_name, price, quantity, item_size, colour, totalPrice ) VALUES('$b_ID', '$item_name', '$price', '$quantity', '$item_size','$colour','$totalPrice')";
 
 
 #test the query

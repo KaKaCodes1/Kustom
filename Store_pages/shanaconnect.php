@@ -2,12 +2,12 @@
 
 
 //Connect to the database
-$host = "localhost";//host name
-$user = "root";//username
+$servername = "localhost";//host name
+$username = "root";//username
 $password = "";//password
-$database = "kustom";//database name
+$db= "kustom";//database name
 //create a connection
-$conn = new mysqli($host, $user, $password, $database);
+$conn = new mysqli($servername,  $username, $password, $db);
 
 // Create connection
 //$conn = mysqli_connect($servername, $username, $password,$db);
