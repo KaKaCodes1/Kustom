@@ -2,7 +2,7 @@
 include 'dbconnect.php';
 include 'dbfields.php';
 
-$sql='INSERT INTO `trial2`(`p_flavour`, `quanity`, `itemName`, `price`, `p_desc`) VALUES ("Vanilla","0","Cake","10000","Sweeet")';
+$sql='INSERT INTO `debbie`(`item_ID`, `b_ID`, `item_name`, `flavour`, `quantity`, `price`) VALUES ("[value-1]","[value-2]","[value-3]","[value-4]","[value-5]","[value-6]")';
 
 
 if (mysqli_query($conn, $sql)) {
