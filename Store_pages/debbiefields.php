@@ -7,5 +7,6 @@ $item_name=$_POST['itemName'];
 $flavour=$_POST['flavour'];
 $quantity=$_POST['quantity'];
 $price=$_POST['price'];
+$totalPrice = $price * $quantity;
 echo "Data from the form picked successfully</br>";
 ?>

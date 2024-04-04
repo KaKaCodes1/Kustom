@@ -1,9 +1,10 @@
 <?php
+$b_id=0;
 #This is responsible for connecting the forms to the database
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "kustom2";
+$db = "kustomupdate";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password,$db);
