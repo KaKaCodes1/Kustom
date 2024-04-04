@@ -46,7 +46,7 @@
     
                     <h2>Sign in to Kustom</h2>
                     <div class="account_forms">
-                        <form action="" method="post">
+                        <form action="../sign_in_php/sign_in.php" method="post">
                     
                             <label>Email:</label>
                                 <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
@@ -56,9 +56,9 @@
                                 <input class="data_entry" type="password" name="password" placeholder="password">
                             <br>
                             
-                            <input type="radio" name=" Account" value="0"> Business Account
+                            <input type="radio" value="1" name = "a_type"> Business Account
                             &nbsp;&nbsp;
-                            <input type="radio" name=" Account" value="1"> Normal Accouunt
+                            <input type="radio" value="0" name = "a_type"> Normal Accouunt
                             <br>
                             <br>
     
@@ -118,20 +118,20 @@
                             
     
                                 <div class="account_forms">
-                                    <form action="" method="post">
+                                    <form action="sign_up.php" method="post">
     
                                         <label>First Name:</label>
-                                            <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="First Name">
+                                            <input autofocus class="data_entry" type="text" name="fname" placeholder="First Name">
                                         
                                         <br>
     
                                         <label>Last Name:</label>
-                                            <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Last Name">
+                                            <input autofocus class="data_entry" type="text" name="lname" placeholder="Last Name">
                                         
                                         <br>
                                 
                                         <label>Email:</label>
-                                            <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                                            <input autofocus class="data_entry" type="Email" name="email" placeholder="Email">
                                         
                                         <br>
                                         <label>Password:</label>
@@ -181,12 +181,12 @@
                                     <br>
                                     <br>
                                     <label>First Name:</label>
-                                        <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="First Name">
+                                        <input autofocus class="data_entry" type="text" name="fname" placeholder="First Name">
                                 
                                     <br>
     
                                     <label>Last Name:</label>
-                                        <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Last Name">
+                                        <input autofocus class="data_entry" type="text" name="lname" placeholder="Last Name">
                                 
                                     <br>
                             
@@ -208,13 +208,13 @@
                                     <br>
     
                                     <p>What is your business called?:</p>
-                                        <input autofocus class="data_entry" type="Email" name="emailInput" >
+                                        <input autofocus class="data_entry" type="text" name="emailInput" >
                                 
                                     <br>
     
                                     <p>Describe Your business in a brief clear couple of sentences:</p>
                                     <p>(This can be changed later)</p>
-                                        <textarea>
+                                        <textarea name = "description">
     
                                         </textarea>
                                 
@@ -222,7 +222,7 @@
                             
                                     <label>Business Email:</label>
                                     <br>
-                                        <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                                        <input autofocus class="data_entry" type="Email" name="b_emailInput" placeholder="Email">
                                     
                                     <br>
     
