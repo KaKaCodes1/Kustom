@@ -1,6 +1,6 @@
 <?php
-include 'dbconnect.php';
-include 'dbfields.php';
+include 'debbieconnect.php';
+include 'deddiefields.php';
 
 $sql = "INSERT INTO `debbie`(`item_ID`, `b_ID`, `item_name`, `flavour`, `quantity`, `price`) VALUES ('$item_ID', '$b_ID', '$item_name', '$flavour', '$quantity', '$price')";
 
