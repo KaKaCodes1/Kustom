@@ -63,10 +63,17 @@ if (mysqli_query($conn, $sql)) {
   }
 */
 
+//Retain login info: ID and a_type
+
+$_SESSION["ID"] = "green";
+$_SESSION["a_type"] = "green";
+
 if ($a_type == 0){
+    $_SESSION["ID"] = $row["c_ID"];
     header("location: ../Kustom_Customer_Profile/customer.html"); // Redirect to Customer Profile
 }
 elseif ($a_type == 1){
+    $_SESSION["ID"] = $row["b_ID"];
     header("location: ../Business account/Business Profile.html"); // Redirect to Customer Profile
 }
 
