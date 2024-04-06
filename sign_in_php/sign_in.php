@@ -74,7 +74,7 @@ if ($a_type == 0){
 }
 elseif ($a_type == 1){
     $_SESSION["ID"] = $row["b_ID"];
-    header("location: ../Business account/Business Profile.html"); // Redirect to Customer Profile
+    header("location: ../Business account/Business Profile.html"); // Redirect to Business Profile
 }
 
 
