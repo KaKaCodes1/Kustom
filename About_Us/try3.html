@@ -42,28 +42,29 @@
             <h2>Sign in to Kustom</h2>
             <div class="account_forms">
                 <form action="../sign_in_php/sign_in.php" method="post">
-            
-                    <label>Email:</label>
-                        <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
                     
-                    <br>
-                    <label>Password:</label>
-                        <input class="data_entry" type="password" name="password" placeholder="password">
-                    <br>
-                    
-                    <input type="radio" name=" Account" value="0"> Business Account
-                    &nbsp;&nbsp;
-                    <input type="radio" name=" Account" value="1"> Normal Accouunt
-                    <br>
-                    <br>
+                <label>Email:</label>
+                <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email">
+                
+                <br>
+                <label>Password:</label>
+                    <input class="data_entry" type="password" name="password" placeholder="password">
+                <br>
+                
+                <input type="radio" value="1" name = "a_type"> Business Account
+                &nbsp;&nbsp;
+                <input type="radio" value="0" name = "a_type"> Normal Accouunt
+                <br>
+                <br>
 
-                    <button class="buttonS"  type="reset" name="btnreset" value="clear">Clear</button>
-                    &nbsp;&nbsp;
-                    <button class="buttonS" type="submit" name="btnsubmit" value="Log In">Submit</button>
+                <button class="buttonS"  type="reset" name="btnreset" value="clear">Clear</button>
+                &nbsp;&nbsp;
+                <button class="buttonS" type="submit" name="btnsubmit" value="Log In">Submit</button>
 
-                    <br>
-                    <br>
-                    <p style="text-align: left;">Don't have an account?</p>
+                <br>
+                <br>
+                <p>Don't have an account?</p>
+
                     <a href="..\Final-Kustom_ Create\Kustom-Sign_Up.html">Sign Up</a>
             
                 </form>

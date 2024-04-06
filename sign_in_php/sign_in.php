@@ -19,9 +19,13 @@ elseif ($a_type == '1')
     $sql = "SELECT * FROM `business_profile` WHERE p_email LIKE '$email'";
 }
 else{
-    echo "Error. Account cannot be decided on.";
+    //echo "Error. Account cannot be decided on.";
     // TODO: Figure out how to redirect straight into sign in after error out.
     //header("location: ../../Index.html");
+    echo '<script language="javascript">';
+    echo 'alert("Select the right account!")';  
+    echo '</script>';
+    exit();
 }
 
 $result = $conn->query($sql);
@@ -35,10 +39,15 @@ if ($result->num_rows > 0) {
     echo "We have Identified who you are to us! Welcome";
     //Redirect to Customer or  user profile
   } else {
-    echo "0 results";
+    //echo "0 results";
 
     //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    header("location: ../Index.html");
+   
+    echo '<script language="javascript">';
+    echo 'alert("No account found")';  
+    echo '</script>';
+
+    //header("location: ../Index.html");
     exit(); // STOP EXECUTION
   }
   $conn->close();
