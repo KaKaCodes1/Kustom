@@ -69,7 +69,7 @@ CREATE TABLE `customer_profile` (
   `fname` varchar(40) NOT NULL,
   `lname` text NOT NULL,
   `email` date NOT NULL,
-  'address' text NOT NULL,
+  `p_address` text NOT NULL,
   `password` text NOT NULL,
   `join_date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
