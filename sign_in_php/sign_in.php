@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+      echo "c_ID: " . $row["c_ID"]. " - Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
     }
 
     echo "We have Identified who you are to us! Welcome";
@@ -38,7 +38,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 
     //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    //header("location: Index.html");
+    header("location: ../Index.html");
     exit(); // STOP EXECUTION
   }
   $conn->close();
@@ -55,10 +55,10 @@ if (mysqli_query($conn, $sql)) {
 */
 
 if ($a_type == 0){
-    header("location: customer.html"); // Redirect to Customer Profile
+    header("location: ../Kustom_Customer_Profile/customer.html"); // Redirect to Customer Profile
 }
 elseif ($a_type == 1){
-    header("location: Business Profile.html"); // Redirect to Customer Profile
+    header("location: ../Business account/Business Profile.html"); // Redirect to Customer Profile
 }
 
 
