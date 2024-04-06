@@ -1,6 +1,5 @@
 <?php
-/*Author: Sharon Kitavi
- **Date: 24/03/2024
+/**Date: 24/03/2024
  **Php code for linking the db to Kustom customer profile landing page
  */
 
