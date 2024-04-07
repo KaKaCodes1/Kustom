@@ -32,11 +32,12 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
-      echo "c_ID: " . $row["c_ID"]. " - Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
-    }
+    $row = $result->fetch_row();
+      echo $row[1];
 
-    echo "We have Identified who you are to us! Welcome";
+    $ID = $row[0];
+    
+    echo "Welcome";
     //Redirect to Customer or  user profile
   } else {
     //echo "0 results";
@@ -48,9 +49,10 @@ if ($result->num_rows > 0) {
     echo '</script>';
 
     //header("location: ../Index.html");
+    $conn->close();
     exit(); // STOP EXECUTION
   }
-  $conn->close();
+  
 
   /*
 if (mysqli_query($conn, $sql)) {
@@ -65,17 +67,20 @@ if (mysqli_query($conn, $sql)) {
 
 //Retain login info: ID and a_type
 
-$_SESSION["ID"] = "green";
-$_SESSION["a_type"] = "green";
+$_SESSION["a_type"] = $a_type;
 
 if ($a_type == 0){
-    $_SESSION["ID"] = $row["c_ID"];
-    header("location: ../Kustom_Customer_Profile/customer.html"); // Redirect to Customer Profile
+    $_SESSION["ID"] = $ID;
+    header("location: ../Kustom_Customer_Profile/customer.php"); // Redirect to Customer Profile
+    
 }
 elseif ($a_type == 1){
-    $_SESSION["ID"] = $row["b_ID"];
+    $_SESSION["ID"] = $ID;
     header("location: ../Business account/Business Profile.html"); // Redirect to Business Profile
-}
+    
+  }
+
+  $conn->close();
 
 
 
