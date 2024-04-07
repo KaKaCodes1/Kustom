@@ -1,9 +1,9 @@
 <?php
 // Records from the form
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+$fname = $_REQUEST['fname'];
+$lname = $_REQUEST['lname'];
+$email = $_REQUEST['email'];
+$password = $_REQUEST['password'];
 
 // Database connection
 $servername = "localhost";
