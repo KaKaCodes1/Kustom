@@ -10,7 +10,7 @@ $password = $_POST['password'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "kustom";
+$database = "kustomupdate";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
