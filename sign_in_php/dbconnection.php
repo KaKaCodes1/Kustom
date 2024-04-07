@@ -15,7 +15,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "kustom_v2";
+$db = "kustomupdate";
 // Create connection
 $conn = new mysqli($servername, $username, $password,$db);
 // Check connection

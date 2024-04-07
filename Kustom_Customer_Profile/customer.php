@@ -13,7 +13,7 @@ if(isset($_SESSION['ID'])) {//Assuming this has been set on log in...
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "kustom_v2";
+$database = "kustomupdate";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
