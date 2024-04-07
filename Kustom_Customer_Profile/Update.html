@@ -47,17 +47,17 @@
             <br>
             <center><h3>Update your details in the form below</h3></center>
             <div class="account_forms">
-                <center><form action="" method="post">
+               <center><form action="update.php" method="POST">
                     <label>First Name:</label>
-                        <input type="text" value="Sharon"><br>
+                        <input type="text" value="Sharon" name="fname"><br>
 			        <label>Last Name:</label>
-                        <input type="text" value="Kitavi"><br>
+                        <input type="text" value="Kitavi" name="lname"><br>
                         <p><strong>Note:</strong> The default maximum character length is 20.</p>
                     <label>Email:  </label>
-                        <input autofocus class="data_entry" type="Email" name="emailInput" placeholder="Email" value="kitavisharon@gmail.com"><br>
+                        <input autofocus class="data_entry" type="Email" name="email" placeholder="Email" value="kitavisharon@gmail.com"><br>
                     <br>
                     <label>Default Home Address:</label>
-			        <br><select id="Address">
+			        <br><select id="Address" name="p_address">
                     <option>Bomas/CUEA/Galleria</option>
                     <option>Adams Arcade/Dagoretti Corner</option>
                     <option>Buruburu/Hamza</option>
@@ -67,7 +67,10 @@
 			        <option>Kileleshwa/Riverside</option>
                     <option>Kamukunji/Airbase/Mlango Kubwa</option>
 			        </select>
-                    <br><br><label>Password:</label>
+                    <br><br>
+                    <label>Phone Number:</label>
+                        <input type="number" name="phone">
+                    <br><label>Password:</label>
                         <input class="data_entry" type="password" name="password" placeholder="password" value="phsgsg">
                     <br>
                     <label>Re-enter Password:</label>
