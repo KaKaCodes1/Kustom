@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
+}
 // Inserting into the database
 $sql = "INSERT INTO customer_profile (fname, lname, email, password) VALUES ('$fname', '$lname', '$email', '$password')";
 
