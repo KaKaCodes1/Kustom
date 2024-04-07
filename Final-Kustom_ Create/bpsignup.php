@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $b_description = mysqli_real_escape_string($conn, $_POST["b_description"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 }
-    $sql = "INSERT INTO business_profile (fname, lname, b_name, p_email, b_email, b_description password) VALUES ('$fname', '$lname', '$b_name', '$p_email', '$b_email', '$b_description' '$password')";
+    $sql = "INSERT INTO business_profile (fname, lname, b_name, p_email, b_email, b_description, password) VALUES ('$fname', '$lname', '$b_name', '$p_email', '$b_email', '$b_description' '$password')";
     
 
 if ($conn->query($sql) === TRUE) {
