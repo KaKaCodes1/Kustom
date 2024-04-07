@@ -35,7 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($conn->query($sql) === TRUE) {
     echo "Sign-up successful.";
-} else {
+}
+else {
     echo "Error signing-up. Please try again. Error: " . $sql . "<br>" . $conn->error;
 }
 
