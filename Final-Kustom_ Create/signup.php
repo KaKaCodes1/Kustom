@@ -30,8 +30,7 @@ $sql = "INSERT INTO customer_profile (fname, lname, email, password) VALUES ('$f
 
 if ($conn->query($sql) === TRUE) {
     echo "Sign-up successful.";
-    header("refresh:3;url=sign_in.html"); // Redirect to sign-in page after 3 seconds
-    exit();
+
 } 
 else {
     echo "Error signing-up. Please try again. Error: " . $sql . "<br>" . $conn->error;
