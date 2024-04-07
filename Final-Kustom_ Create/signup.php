@@ -1,10 +1,11 @@
 <?php
 // Records from the form
+/*
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-
+*/
 // Database connection
 $servername = "localhost";
 $username = "root";
