@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2024 at 10:40 AM
+-- Generation Time: Apr 07, 2024 at 04:24 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,6 +44,7 @@ CREATE TABLE `business_profile` (
 --
 
 INSERT INTO `business_profile` (`b_ID`, `fname`, `lname`, `b_name`, `p_email`, `b_email`, `b_description`, `address`, `password`) VALUES
+(0, 'Debbie', 'Kamau', 'Debbie\'s Delight', 'DebbieK@gmail.com', 'ddelight2020@gmail.com', 'shop for pastries                                      ', '', '$2y$10$ZlxQjnU8pkpO2XTrHFMXx.hDOawutGpsghQVkNppbu4QvfkGnPPJS'),
 (1, 'Sharon', 'Natasha', 'Hooked by Shana', 'SharonShi@gmail.com', 'hooked@shana.com', 'Store for Crotchet', '1234', '12345678');
 
 -- --------------------------------------------------------
@@ -68,12 +69,19 @@ CREATE TABLE `customer_profile` (
   `c_ID` int(11) NOT NULL,
   `fname` varchar(40) NOT NULL,
   `lname` text NOT NULL,
-  `email` date NOT NULL,
+  `email` text NOT NULL,
   `p_address` text NOT NULL,
   `phone` int(10) NOT NULL,
   `password` text NOT NULL,
   `join_date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `customer_profile`
+--
+
+INSERT INTO `customer_profile` (`c_ID`, `fname`, `lname`, `email`, `p_address`, `phone`, `password`, `join_date`) VALUES
+(1, 'king', 'drew', 'kd@gmail.com', '', 0, '$2y$10$Ls8pyFjB76h1XA9N899tWOT4XvVCOLp.v/vdxi/OUfjoYa64McnK6', '2024-04-07 14:55:44');
 
 -- --------------------------------------------------------
 
@@ -100,7 +108,8 @@ INSERT INTO `debbie` (`item_ID`, `b_ID`, `item_name`, `flavour`, `quantity`, `pr
 (2, 0, 'Birthday Cakes', 'Strawberry', 1, 1000, 1000),
 (3, 0, 'Croissants', 'Strawberry', 3, 250, 750),
 (4, 0, 'Croissants', 'Strawberry', 3, 250, 750),
-(5, 0, 'Fruit Pies', 'Vanilla', 9, 500, 4500);
+(5, 0, 'Fruit Pies', 'Vanilla', 9, 500, 4500),
+(6, 0, 'Doughnuts', 'Chocolate', 4, 150, 600);
 
 -- --------------------------------------------------------
 
@@ -192,7 +201,7 @@ ALTER TABLE `shana`
 -- AUTO_INCREMENT for table `business_profile`
 --
 ALTER TABLE `business_profile`
-  MODIFY `b_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `b_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `cart`
@@ -204,13 +213,13 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT for table `customer_profile`
 --
 ALTER TABLE `customer_profile`
-  MODIFY `c_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `c_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `debbie`
 --
 ALTER TABLE `debbie`
-  MODIFY `item_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `item_ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `orders`
