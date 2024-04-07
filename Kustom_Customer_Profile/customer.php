@@ -37,7 +37,7 @@ function displayDetails($conn){
     $stmt->execute();
 
     // Bind result variables
-    $stmt->bind_result($username, $email);
+    $stmt->bind_result($fname, $lname, $email, $p_address, $phone);
 
     // Fetch values
     $stmt->fetch();
