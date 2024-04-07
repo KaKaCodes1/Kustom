@@ -1,0 +1,467 @@
+/*  Theme Colours
+        In the navy #283848
+        Ash Violet #a29baa
+        Hopeful #f0b3b2
+        Peach blossom #f3d0bd*/
+
+
+body{
+  background-color: #ffe5b4ef;
+}
+.main_grid{
+  display: grid;
+  grid-template-rows: 100px 830px 250px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+    'header header header '
+    'navbar content content'
+    'footer footer footer '
+  ;
+  column-gap: 10px;
+  row-gap: 10px;
+  
+}
+
+/*BEGINNING OF HEADER CSS*/
+.header{
+  grid-area: header;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #a29baa;
+  padding: 20px,30px;
+  margin-top: 0PX;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-weight: 1000px;
+  font-size: 100px;
+  color: white;
+  margin-right: 20px;
+}
+
+.nav_list {
+  border-radius: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+ul li a {
+  text-decoration: none;
+  font-weight: 100px;
+  font-size: 15px;
+  font-family: Montserrat Alternates, sans-serif;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+ul li a:hover {
+  background-color: #283848;
+  color: white;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+}
+ul li a:active {
+  background-color: #283848;
+  color: #283848;
+}
+button:hover {
+  background-color: #a29baa;
+} 
+
+#sign_in_overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #1b1a1dc4;
+
+  position: fixed;
+  display: none; /*Hide or reveal sign in form*/
+  z-index: 1;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#sign_in_form{
+  background-color: #e3bca7c9;
+  border-left: #283848 5px solid;
+  color: #283848;
+  
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 55%;
+  min-width: 300px;
+  
+
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 2;
+  
+
+}
+
+#sign_in_form> h2{
+  color: aliceblue;
+  border: #283848;
+  margin-bottom: 20px;
+  
+}
+
+.account_forms > form > .data_entry{
+  margin-bottom: 20px;
+  
+  padding: 5px;
+  border: none;
+  width: 70%;
+  min-width: 200px;
+  border-bottom:2px solid #39373b;
+}
+
+.account_forms > form > label{
+  display: inline-block;
+  width: 150px;
+  font-weight: 400;
+
+}
+
+.account_forms > form > textarea{
+  
+  width: 60%;
+  height:100px;
+}
+
+.button {
+  width: auto;
+  position: relative;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  padding: 20px 25px;
+  background-color: #a29baa;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 100px;
+  font-size: 15px;
+  color: white;
+}
+#home_banner > button :hover {
+  background-color: #a29baa;
+  color: #283848;
+}
+
+
+/*END OF HEADER  CSS*/
+.navbar{
+  grid-area: navbar;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #f3d0bd;
+  padding: 0px;
+  text-align: left;
+  width:100%;
+  height:100%;
+  }
+        .navbar table{
+          position:relative;
+          padding-top: 30px;
+          border-collapse: collapse;
+
+        }
+          .navbar table tr td{
+            font-size: 25px;
+            padding: 20px;
+            width: 270px;
+            transition: all 0.2s;
+            cursor: pointer;
+          }
+          .navbar table tr :hover{
+            color:#f3d0bd;
+            
+          }
+          .navbar tr td:hover{
+            color:#f3d0bd;
+            background-color: #283848;
+          }
+          .navbar table tr td a {
+            color:black;
+            column-width: 200px;
+            text-decoration: none;
+          }
+          .navbar table tr td span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            color:#f3d0bd;
+          }
+          .navbar table tr td a :hover{
+            color:#f3d0bd;
+          }
+          .navbar table tr td :after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            color:#f3d0bd;
+            
+          }
+          .navbar table tr td:hover span {
+            padding-right: 25px;
+            color:#f3d0bd;
+          }
+          
+          .navbar table tr td:hover span:after {
+            opacity: 1;
+            right: 0;
+            color:#f3d0bd;
+        }
+
+.content{
+  display: grid;
+  grid-template-rows: 100px 100px 300px 300px;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-areas: 
+    'welcome welcome welcome welcome '
+    'sales sales followers followers'
+    'tsales tsales tsales tsales '
+    'tproducts tproducts tproducts tproducts'
+  ;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.Welcome{
+  grid-area: welcome;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(109, 26, 26, 0.8);
+}
+
+  .Welcome p{
+    text-align: center;
+  }
+
+.Total_sales{
+  grid-area: sales;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.Total_sales p{
+  text-align: center;
+}
+
+.Visitors{
+  grid-area: visitors;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.Visitors p{
+  text-align: center;
+}
+
+.Total_orders{
+  grid-area: orders;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.Total_orders p{
+  text-align: center;
+}
+
+.Followers{
+  grid-area: followers;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.Followers p{
+  text-align: center;
+}
+
+.Sales_graph{
+  grid-area: tsales;
+  
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top:  20px;
+  padding-left: 20px;
+}
+
+
+.Top_products{
+  grid-area: tproducts;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.top-selling-products {
+  text-align: left;
+  font-size: 15px;
+  padding: 7px 0px;
+}
+
+.top-selling-products th,h2 {
+  background: #f0b3b2;
+}
+
+.top-selling-products th, .top-selling-products td {
+  padding: 5px 3px;
+}
+
+.inventory {
+  text-align: left;
+  font-size: 28px;
+  padding: 7px 0px;
+}
+
+.inventory th,h2 {
+  background: #f0b3b2;
+}
+
+.inventory th, .inventory td {
+  padding: 10px 8px;
+}
+
+#profile-img{
+  height: 200px;
+  clip-path: circle();
+}
+
+.account_forms > form > .data_entry{
+  margin-bottom: 20px;
+  
+  padding: 5px;
+  border: none;
+  width: 70%;
+  min-width: 200px;
+  border-bottom:2px solid #39373b;
+}
+
+.account_forms > form > label{
+  display: inline-block;
+  width: 150px;
+  font-weight: 400;
+
+}
+
+.account_forms > form > textarea{
+  
+  width: 60%;
+  height:100px;
+}
+
+
+.Footer{
+  grid-area: footer;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  background-color: #a29baa;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_cols {
+  width:25% ;
+  
+}
+.footer_cols h4 {
+  font-size: 20px;
+  color: #f3d0bd;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer_cols ul li {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #283848;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer_cols .social_media a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(red, green, blue, alpha);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #283848;
+  
+}
+.footer_cols .social_media a:hover {
+  color: #f3d0bd;
+  background-color: rgba(red, green, blue, alpha);
+}
+
+#goUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f0b3b2;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+}
+
+#goUpBtn:hover {
+  background-color: #283848;
+}
+#goUpBtn img{
+  width: 20px;
+  height: 20px;
+}

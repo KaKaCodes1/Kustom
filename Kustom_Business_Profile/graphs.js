@@ -2,6 +2,7 @@
 
 const sales = document.getElementById("sales");
 const earning = document.getElementById("earning");
+const products = document.getElementById("products");
 Chart.defaults.color = "#927685";
 Chart.defaults.borderColor = "#33202c";
 
@@ -51,3 +52,24 @@ new Chart(earning, {
   },
 });
 
+new Chart(products, {
+  type: "doughnut",
+  data: {
+    labels: ["Fashion", "Gadjet", "Other"],
+    datasets: [
+      {
+        label: "My Revenue",
+        data: [380, 200, 500],
+        backgroundColor: [
+          "rgba(155,128,151,1)",
+          "rgba(254,111,162,1)",
+          "rgba(244,164,111, 1)",
+        ],
+        hoverBackgroundColor: "#FF90B8",
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+  },
+});
