@@ -52,8 +52,10 @@
                 <div class="grid3"><h2>PROFILE</h2>
                     <hr>
                     <img src="Avatar.png" alt="Avatar" class="avatar">
-                    <p>Sharon Kitavi</p>
-                    <p>kitavisharon@gmail.com</p>
+                    <?php
+                    echo "<p>". $fname . $lname. "<br>";
+                    echo "<p>". $email. "<br>";
+                    ?>
 
                 </div><!--End of profile section-->
 
@@ -61,8 +63,10 @@
                     <h2>MY ADDRESS</h2>
                     <hr>
                     <p>Default Shipping Address:</p>
-                    <p>Bomas/CUEA/Galleria, Nairobi
-                        +254 115118376 / +254 735922710</p>
+                    <?php
+                    echo "<p>". $p_address. $phone. "<br>";
+                    ?>
+
                     <br>
                     <a href="Update.html" class="buttons" target="_self">Update Address  <i style="font-size:24px" class="fa">&#xf040;</i></a>
 
