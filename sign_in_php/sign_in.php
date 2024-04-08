@@ -54,16 +54,6 @@ if ($result->num_rows > 0) {
   }
   
 
-  /*
-if (mysqli_query($conn, $sql)) {
-    echo "We have Identified who you are to us! Welcome";
-    //Redirect to Customer or  user profile
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    header("location: Index.html");
-    exit(); // STOP EXECUTION
-  }
-*/
 
 //Retain login info: ID and a_type
 
@@ -76,7 +66,7 @@ if ($a_type == 0){
 }
 elseif ($a_type == 1){
     $_SESSION["ID"] = $ID;
-    header("location: ../Business account/Business Profile.html"); // Redirect to Business Profile
+    header("location: ../Kustom_Business_Profile/New_Business_Profile.html"); // Redirect to Business Profile
     
   }
 
