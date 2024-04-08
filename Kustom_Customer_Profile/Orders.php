@@ -53,7 +53,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "kustomupdate"; //kustomupdate
+$database = "group16"; //kustomupdate
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -110,27 +110,7 @@ function deleteCartItems($conn) {
     return $result1;
 }
 
-//function to update quantity
-// function updateQuantity($quantity, $item_id) {
-//     $item_id = $_POST['item_ID'];
-//     $new_quantity = $_POST['quantity'];
-    
-//     // Update the quantity in the database
-//     $query = "UPDATE shana SET quantity = $quantity WHERE id = $item_id";
 
-//     if ($conn->query($query) === TRUE) {
-//         echo "Quantity updated successfully.";
-//     } else {
-//         echo "Error updating quantity: " . $conn->error;
-//     }
-// }
-
-
-// if (! empty($cartItems)) {
-//     // Update cart item quantity in database
-//     $newQuantity = $cartItems[0]["quantity"] + $_POST["quantity"];
-//     updateCartQuantity($newQuantity, $cartItems[0]["id"]);
-// }
 
 if (isset($_POST['empty_cart'])) {
     // Call function to delete all items from the cart
