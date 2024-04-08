@@ -2,6 +2,8 @@
 #This is reponsible for reading data from the form post method a field at a time (array style element retrieval) and assigns it to corresponding variables.
 #$name represent the name in the database tables
 /*['name'] represent names in the forms*/
+
+
 $b_ID=$_POST['StoreID'];
 $item_name=$_POST['itemName'];
 $price=$_POST['price'];

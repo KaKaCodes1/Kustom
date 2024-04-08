@@ -233,6 +233,18 @@ h2{
     text-decoration: none;
 }
 
+/*.footer2{
+  background-color: #a29baa;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer2_cols{
+  width:100% ;
+  padding-top: 5px;
+}*/
 
 .footer {
   background-color: #a29baa;
