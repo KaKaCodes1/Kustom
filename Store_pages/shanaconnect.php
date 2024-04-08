@@ -5,7 +5,7 @@
 $servername = "localhost";//host name
 $username = "root";//username
 $password = "";//password
-$db= "kustomupdate";//database name
+$db= "group16";//database name
 //create a connection
 $conn = new mysqli($servername,  $username, $password, $db);
 
