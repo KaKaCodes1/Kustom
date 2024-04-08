@@ -24,9 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+    $p_addres = mysqli_real_escape_string($conn, $_POST["p_address"]);
+    $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
 }
 // Inserting into the database
-$sql = "INSERT INTO customer_profile (fname, lname, email, password) VALUES ('$fname', '$lname', '$email', '$password')";
+$sql = "INSERT INTO customer_profile (fname, lname, email,p_address, phone, password) VALUES ('$fname', '$lname', '$email', '$p_addres','$phone','$password')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Sign-up successful.";

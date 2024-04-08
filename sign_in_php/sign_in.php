@@ -61,7 +61,7 @@ $_SESSION["a_type"] = $a_type;
 
 if ($a_type == 0){
     $_SESSION["ID"] = $ID;
-    header("location: ../Kustom_Customer_Profile/customer.php"); // Redirect to Customer Profile
+    header("location: ../Kustom_Customer_Profile/customer1.php"); // Redirect to Customer Profile
     
 }
 elseif ($a_type == 1){

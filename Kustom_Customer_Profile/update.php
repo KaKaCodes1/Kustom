@@ -3,15 +3,15 @@
  **Php code for the Update form on the Customer Profile page.
  */
 
-
+session_start();
 //connection parameters
 $servername = "localhost";
 $username = "root";
-$password = " ";
-$dbname = "kustom";
+$password = "";
+$database = "group16";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $database);
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -21,16 +21,16 @@ if ($conn->connect_error) {
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Retrieve form data
-    $customerId = $_POST['c_ID'];
+    $customerId = $_SESSION['ID'];
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $address = $_POST['p_address'];
     $phone = $_POST['phone'];
-    $pass = $_POST['password2']
+    $pass = $_POST['password2'];
 
     // Prepare SQL statement to update customer profile
-    $sql = "UPDATE customer_profile SET fname=$fname, lname=$lname, email=$email,p_address=$address, phone=$phone, password2=$pass WHERE c_ID=customerId";
+    $sql = "UPDATE customer_profile SET fname=$fname, lname=$lname, email=$email,p_address=$address, phone=$phone, password2=$pass WHERE c_ID=$customerId";
 
 // Prepare and bind parameters
 $stmt = $conn->prepare($sql);

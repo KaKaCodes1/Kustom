@@ -51,78 +51,15 @@
                 <div class="grid3"><h2>PROFILE</h2>
                     <hr>
                     <img src="Avatar.png" alt="Avatar" class="avatar">
+                    <p>Welcome to your customer profile.</p>
                     
-                    <?php
-                    /**Date: 24/03/2024
-                     **Php code for linking the db to Kustom customer profile landing page
-                     */
-                    
-                    //start session assuming customer details will be stored after logging in
-                    session_start();
-                    
-                    if(isset($_SESSION['user_id'])) {//Assuming this has been set on log in...
-                    //connection parameters
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $database = "kustom";
-                    
-                    $conn = new mysqli($servername, $username, $password, $database);
-                    
-                    // Check connection
-                    if (!$conn) {
-                        die("Connection failed: " . mysqli_connect_error()."</br>");
-                     }
-                    else{  echo "Connection successfully created</br>";}
-                    
-                    
-                    //A function to display the necessary profile and address details on the page
-                    function displayDetails($conn){
-                    
-                        //sql query to get needed details 
-                        $sql = "SELECT fname, lname, email, p_address, phone 
-                                FROM customer_profile WHERE c_ID =$_SESSION['user_id']";
-                    
-                        // Prepare and bind parameters
-                        $stmt = $conn->prepare($sql);
-                        $stmt->bind_param("i", $_SESSION['user_id']);
-                    
-                        // Execute statement
-                        $stmt->execute();
-                    
-                        // Bind result variables
-                        $stmt->bind_result($fname, $lname, $email, $p_address, $phone);
-                    
-                        // Fetch values
-                        $stmt->fetch();
-
-                        echo "<p>". $fname . $lname. "<br>";
-                        echo "<p>". $email. "<br>";
-                    
-                        // Close statement
-                        $stmt->close();
-                    
-                        // Close connection
-                        $conn->close();
-                    
-                    
-                    }
-                    
-                    
-                    } else {
-                        echo "User not logged in";
-                    }
-                    ?>
+                 
                 </div><!--End of profile section-->
 
                 <div class="grid4">
                     <h2>MY ADDRESS</h2>
                     <hr>
-                    <p>Default Shipping Address:</p>
-                    <?php
-                    echo "<p>". $p_address. $phone. "<br>";
-                    ?>
-
+                    <br><br><br>
                     <a href="Update.html" class="buttons" target="_self">Update Address  <i style="font-size:24px" class="fa">&#xf040;</i></a>
 
                 </div><!--End of address section-->
@@ -137,7 +74,7 @@
 
                 </div><!--End of settings section-->
                 <div class="grid6">
-                    <center><a class="buttons" href="Home.html" target="_blank">LOG OUT</a></center><br><br>
+                    <center><a class="buttons" href="../Index.html" target="_blank">LOG OUT</a></center><br><br>
                     <footer class="footer">
                         <style>
                         .footer{position:relative;}</style>

@@ -86,9 +86,9 @@ h2{
     }
     
 .grid2 { grid-area: menu; 
-    padding-left:120px;
+    padding-left:130px;
     padding-top: 70px;
-    padding-right: 120px;
+    padding-right: 130px;
     padding-bottom: 30px;
     background-color: #f3d0bd;
     text-align: left;
@@ -153,11 +153,11 @@ h2{
       }
 
 .grid3 { grid-area: profile; 
-    padding: 70px;
+    padding: 100px;
     background-color: white;
     text-align: left;}
 .grid4 { grid-area: address; 
-    padding: 59px;
+    padding: 100px;
     background-color: white;
     text-align: left;}
 .grid5 { grid-area: settings; 
@@ -202,12 +202,12 @@ h2{
     background-color:#f3d0bd;
     column-gap: 4px;
     row-gap: 5px;
-    width:fit-content;
+    width:max-content;
     grid-template-areas:
-        'header header header header header header'
-        'menu menu profile profile address address'
-        'menu menu settings settings settings settings'
-        'footer footer footer footer footer footer';
+        'header header header header header header header header'
+        'menu menu profile profile profile address address address'
+        'menu menu settings settings settings settings settings settings'
+        'footer footer footer footer footer footer footer footer ';
 
 }
 
