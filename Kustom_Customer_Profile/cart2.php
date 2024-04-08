@@ -7,7 +7,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "group16"; //kustomupdate
+$database = "group16"; 
 
 $conn = new mysqli($servername, $username, $password, $database);
 
