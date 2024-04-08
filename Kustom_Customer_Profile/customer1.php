@@ -65,7 +65,7 @@
                     $servername = "localhost";
                     $username = "root";
                     $password = "";
-                    $database = "kustom";
+                    $database = "group16";
                     
                     $conn = new mysqli($servername, $username, $password, $database);
                     
