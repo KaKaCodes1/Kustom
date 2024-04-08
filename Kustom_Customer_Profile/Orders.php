@@ -53,7 +53,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "kustomupdate"; //kustomupdate
+$database = "group16"; //kustomupdate
 
 $conn = new mysqli($servername, $username, $password, $database);
 
