@@ -4,7 +4,7 @@ $b_id=0;
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "Group 16";
+$db = "group16";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password,$db);
