@@ -8,7 +8,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "group16";
+$dbname = "kustom";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);

@@ -7,7 +7,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "kustom_v2"; //kustomupdate
+$database = "group16"; 
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -23,7 +23,7 @@ function getCartItems($conn) {
 
     //the sql query to get cart items for the user
     $sql = "SELECT * FROM cart
-    WHERE cart.c_ID = $userId
+    WHERE shana.c_ID = $userId
     UNION
     SELECT * FROM debbie
     WHERE debbie.c_ID = $userId";
